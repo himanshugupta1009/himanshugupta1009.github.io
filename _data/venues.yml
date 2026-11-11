@@ -1,19 +1,21 @@
+# Venue badge colors. Conferences share one blue; light badges (Preprint,
+# Workshop, Thesis) get dark text via assets/css/main.scss.
 "AAMAS":
   url: https://www.ifaamas.org/
   color: "#0b5394"
 
 "IROS":
   url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
-  color: "#00629b"
+  color: "#0b5394"
 
 "DDDAS":
-  color: "#7a3e9d"
+  color: "#0b5394"
 
 "Preprint":
-  color: "#f2c230" # yellow; dark text set in assets/css/main.scss
+  color: "#f2c230"
 
 "Workshop":
-  color: "#2e7d32"
+  color: "#a8d5a2"
 
 "Thesis":
   color: "#cfb87c"

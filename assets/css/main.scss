@@ -55,9 +55,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Franklin", Verdana, Helvetica, sans-serif;
 }
 
-/* Yellow "Preprint" venue badge needs dark text for contrast */
+/* Venue badges: white text on dark badges, dark text on light ones,
+   whether or not the badge label is a link */
+.publications .abbr abbr,
+.publications .abbr abbr a,
+.publications .abbr abbr div {
+  color: #fff !important;
+}
 .publications .abbr abbr[style*="#f2c230"],
 .publications .abbr abbr[style*="#f2c230"] a,
-.publications .abbr abbr[style*="#f2c230"] div {
+.publications .abbr abbr[style*="#f2c230"] div,
+.publications .abbr abbr[style*="#a8d5a2"],
+.publications .abbr abbr[style*="#a8d5a2"] a,
+.publications .abbr abbr[style*="#a8d5a2"] div,
+.publications .abbr abbr[style*="#cfb87c"],
+.publications .abbr abbr[style*="#cfb87c"] a,
+.publications .abbr abbr[style*="#cfb87c"] div {
   color: #333 !important;
+}
+
+/* Larger base text size (template default is 16px); rem-based sizes scale with it */
+html {
+  font-size: 18px;
 }
