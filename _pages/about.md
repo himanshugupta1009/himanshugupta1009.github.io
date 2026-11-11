@@ -37,19 +37,23 @@ Before my PhD, I earned an M.S. in Computer Science at CU Boulder, where my thes
 **I am looking for research internships for Summer 2027** in motion planning, autonomous systems and robot learning. Please feel free to reach out.
 
 <div>
-<h2><a href="/news/" style="color: inherit">News</a></h2>
+<h2 class="section-heading"><a href="/news/" style="color: inherit">News</a></h2>
 {% include news.liquid limit=true %}
 </div>
 
 <div>
-<h2><a href="/publications/" style="color: inherit">Selected publications</a></h2>
+<h2 class="section-heading"><a href="/publications/" style="color: inherit">Selected publications</a></h2>
 {% include selected_papers.liquid %}
 </div>
 
 <div>
-<h2>Writing</h2>
+<h2 class="section-heading">Writing</h2>
 <ul>
   <li><a href="https://medium.com/correll-lab/building-clip-from-scratch-to-identify-sports-celebrities-7d0502edae3d">Building CLIP from Scratch to Identify Sports Celebrities</a> · Medium, Dec 2024</li>
   <li><a href="https://medium.com/correll-lab/paper-review-set-transformers-6ce59c2ad88f">Paper Review: Set Transformers</a> · Medium, Dec 2024</li>
 </ul>
 </div>
+
+<style id="section-heading-style">
+h2.section-heading { border-left: 4px solid var(--global-theme-color); padding-left: 0.75rem; line-height: 1.2; margin-top: 2.5rem; margin-bottom: 1.25rem; }
+</style>
