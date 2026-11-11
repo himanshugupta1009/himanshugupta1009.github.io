@@ -1,0 +1,19 @@
+"AAMAS":
+  url: https://www.ifaamas.org/
+  color: "#0b5394"
+
+"IROS":
+  url: https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros
+  color: "#00629b"
+
+"DDDAS":
+  color: "#7a3e9d"
+
+"Preprint":
+  color: "#b31b1b"
+
+"Workshop":
+  color: "#2e7d32"
+
+"Thesis":
+  color: "#cfb87c"
