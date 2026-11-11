@@ -10,7 +10,7 @@
   color: "#7a3e9d"
 
 "Preprint":
-  color: "#b31b1b"
+  color: "#f2c230" # yellow; dark text set in assets/css/main.scss
 
 "Workshop":
   color: "#2e7d32"
