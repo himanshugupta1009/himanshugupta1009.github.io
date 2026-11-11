@@ -22,7 +22,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a PhD student in Aerospace Engineering (Autonomous Systems) at the University of Colorado Boulder. I am advised by [Prof. Zachary Sunberg](https://www.colorado.edu/aerospace/zachary-sunberg) in the [Autonomous Decision and Control Lab (ADCL)](https://www.cu-adcl.org/) and [Prof. Bradley Hayes](https://www.cairo-lab.com/) in the [Collaborative AI and Robotics Lab (CAIRO)](https://www.cairo-lab.com/).
+I am a PhD student in Aerospace Engineering at the University of Colorado Boulder, co-advised by Professors [Zachary Sunberg](https://www.colorado.edu/aerospace/zachary-sunberg) and [Bradley Hayes](https://www.cairo-lab.com/).
 
 My research is about **robot decision making under uncertainty**. Robots that work alongside people, or that collect data in unpredictable environments, rarely know the full state of the world. I build planning algorithms that reason about this uncertainty directly and still run fast enough for real robots. My work covers:
 
