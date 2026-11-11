@@ -3,6 +3,8 @@ module.exports = {
   css: ["_site/assets/css/*.css"],
   output: "_site/assets/css/",
   skippedContentGlobs: ["_site/assets/**/*.html"],
+  // keep attribute selectors on inline styles (e.g. the yellow Preprint venue badge rule)
+  dynamicAttributes: ["style"],
   safelist: [
     "collapse",
     "collapsing",
