@@ -8,11 +8,13 @@ profile:
   image: prof_pic.jpg
   image_circular: false
 
-selected_papers: true
+# News, selected publications and writing are rendered at the end of this file
+# (instead of by the layout) so the Writing section can sit below publications.
+selected_papers: false
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
@@ -33,3 +35,21 @@ My research is about **robot decision making under uncertainty**. Robots that wo
 Before my PhD, I earned an M.S. in Computer Science at CU Boulder, where my thesis was on autonomous navigation among dynamic obstacles. Before that, I spent two years as a data engineer and scientist at [JioSaavn](https://www.jiosaavn.com/), building large-scale recommendation systems. I received my B.Tech in Computer Science from [IIT Ropar](https://www.iitrpr.ac.in/). In summer 2023, I was a research intern in Prof. Han-Lim Choi's lab at KAIST, working on multi-robot motion planning.
 
 **I am looking for research internships for Summer 2027** in motion planning, autonomous systems and robot learning. Please feel free to reach out.
+
+<div>
+<h2><a href="/news/" style="color: inherit">News</a></h2>
+{% include news.liquid limit=true %}
+</div>
+
+<div>
+<h2><a href="/publications/" style="color: inherit">Selected publications</a></h2>
+{% include selected_papers.liquid %}
+</div>
+
+<div>
+<h2>Writing</h2>
+<ul>
+  <li><a href="https://medium.com/correll-lab/building-clip-from-scratch-to-identify-sports-celebrities-7d0502edae3d">Building CLIP from Scratch to Identify Sports Celebrities</a> · Medium, Dec 2024</li>
+  <li><a href="https://medium.com/correll-lab/paper-review-set-transformers-6ce59c2ad88f">Paper Review: Set Transformers</a> · Medium, Dec 2024</li>
+</ul>
+</div>
