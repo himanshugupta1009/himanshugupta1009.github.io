@@ -74,6 +74,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #333 !important;
 }
 
+/* Animated paper thumbnails (preview = {...} in papers.bib, files in
+   assets/img/publication_preview/). Widen the badge/thumbnail column from 1/6
+   to 1/4 and let the text take the rest of the row. Applied to every paper,
+   with or without a thumbnail, so all titles stay aligned. */
+@media (min-width: 576px) {
+  .publications .row > .abbr {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .publications .row > .col-sm-8 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+
 /* Larger base text size (template default is 16px); rem-based sizes scale with it */
 html {
   font-size: 18px;
