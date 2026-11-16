@@ -8,8 +8,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
 
-# News, selected publications and writing are rendered at the end of this file
-# (instead of by the layout) so the Writing section can sit below publications.
+# News, publications (Selected / All toggle) and writing are rendered at the end
+# of this file (instead of by the layout) so Writing can sit below publications.
 selected_papers: false
 social: true
 
@@ -42,9 +42,36 @@ Before my PhD, I earned an M.S. in Computer Science at CU Boulder, where my thes
 </div>
 
 <div>
-<h2 class="section-heading"><a href="/publications/" style="color: inherit">Selected publications</a></h2>
+<h2 class="section-heading"><a href="/publications/" style="color: inherit">Publications</a></h2>
+<div class="pub-toggle" role="group" aria-label="Which publications to show">
+  <button type="button" class="pub-toggle-btn active" data-target="selected" aria-pressed="true">Selected</button>
+  <span class="pub-toggle-sep" aria-hidden="true">/</span>
+  <button type="button" class="pub-toggle-btn" data-target="all" aria-pressed="false">All</button>
+</div>
+<div class="pub-list" data-list="selected">
 {% include selected_papers.liquid %}
 </div>
+<div class="pub-list" data-list="all" style="display: none">
+<div class="publications">
+{% bibliography --group_by none %}
+</div>
+</div>
+</div>
+
+<script>
+  document.querySelectorAll(".pub-toggle-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = btn.dataset.target;
+      document.querySelectorAll(".pub-toggle-btn").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+        b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+      });
+      document.querySelectorAll(".pub-list").forEach(function (list) {
+        list.style.display = list.dataset.list === target ? "" : "none";
+      });
+    });
+  });
+</script>
 
 <div>
 <h2 class="section-heading">Writing</h2>

@@ -89,6 +89,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Home page "Selected / All" publications toggle (_pages/about.md) */
+.pub-toggle {
+  margin: -0.5rem 0 1rem;
+}
+.pub-toggle-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--global-text-color-light);
+  cursor: pointer;
+}
+.pub-toggle-btn:hover {
+  color: var(--global-hover-color);
+}
+.pub-toggle-btn.active {
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+.pub-toggle-sep {
+  margin: 0 0.4rem;
+  color: var(--global-text-color-light);
+}
+
+/* Teaching page (_pages/teaching.md) */
+.teaching-table th {
+  width: 20%;
+  white-space: nowrap;
+}
+.teaching-instructor {
+  color: var(--global-text-color-light);
+}
+
 /* Larger base text size (template default is 16px); rem-based sizes scale with it */
 html {
   font-size: 18px;
